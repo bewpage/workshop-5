@@ -1,15 +1,17 @@
 package pl.coderslab.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 @Data
+@AllArgsConstructor
 @RequiredArgsConstructor
 public class Book {
-  private final Long id;
-  private final String isbn;
-  private final String title;
-  private final String author;
-  private final String publisher;
-  private final String type;
+  private Long id;
+  private String isbn;
+  private String title;
+  private String author;
+  private String publisher;
+  private String type;
 }
